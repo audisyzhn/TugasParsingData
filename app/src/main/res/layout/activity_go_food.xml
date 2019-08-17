@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".GoFoodActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/menu_gofood"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Food"
+        android:textSize="12pt"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_light"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Nama:"
+                        android:textSize="7pt" />
+
+                        <EditText
+                                android:id="@+id/edit_nama"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Nama"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="20dp"
+                                />
+                    </LinearLayout>
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alamat:"
+                                android:textSize="7pt"
+                                android:padding="20dp"
+                                />
+                            <EditText
+                                android:id="@+id/edit_alamat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Alamat"
+                                android:layout_marginEnd="20dp"
+                                />
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pesan:"
+                                android:textSize="7pt"
+                                android:padding="20dp"
+                                />
+                            <EditText
+                                android:id="@+id/edit_pesan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Pesan"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="20dp"
+                                />
+                         </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            android:textSize="5pt"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_orange_light"/>
+</LinearLayout>
